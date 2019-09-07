@@ -20,9 +20,11 @@ public class MainActivity extends AppCompatActivity {
     public void hii(View view)
     {
         String s=e1.getText().toString();
+        String s2;
         Uri uri= Uri.parse("tel:9100726529");
         Intent i=new Intent(Intent.ACTION_DIAL,uri);
         i.putExtra("hai",s);
         startActivity(i);
+
     }
 }
